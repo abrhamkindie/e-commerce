@@ -4,15 +4,14 @@ import { toast } from 'react-toastify';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay, Pagination } from 'swiper/modules';
 import ProductCard from '../components/common/ProductCard';
-import Footer from '../components/common/Footer';
 import CategorySection from '../components/common/CategorySection';
- 
 import About from './About';
 import useProducts from '../hooks/useProducts';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
+import Footer from '../components/common/Footer'
 function Home() {
   const { products, loading } = useProducts();
   const { addToCart } = useContext(CartContext);
@@ -30,7 +29,7 @@ function Home() {
     <main className="min-h-screen bg-gray-50 text-gray-800">
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-indigo-600 to-violet-600 text-white">
-        <div className="max-w-7xl mx-auto px-6 py-20 lg:py-28 flex flex-col lg:flex-row items-center gap-10">
+        <div className="max-w-7xl mx-auto px-6 py-20 lg:py-20 flex flex-col lg:flex-row items-center gap-10">
           <div className="lg:w-1/2">
             <h1 className="text-4xl lg:text-5xl font-extrabold leading-tight animate-fade-in">
               Shop Smarter. <span className="text-yellow-300">Buy Happier.</span>

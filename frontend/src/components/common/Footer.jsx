@@ -1,7 +1,6 @@
-// frontend/src/components/common/ProductCard.js
 import React, { memo } from 'react';
 
-const footer = memo(() => {
+const Footer = () => {
   return (
          <footer className="bg-gray-900 text-gray-200 py-8">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -44,6 +43,6 @@ const footer = memo(() => {
 
 
    );
-});
+};
 
-export default footer;
+export default memo(Footer);
